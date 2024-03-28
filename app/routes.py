@@ -1,7 +1,6 @@
 from flask import request, jsonify
 from app import app
 from app.utils import auth, buffer
-from flask import send_file
 
 @app.route('/login', methods=['POST'])
 def login():
