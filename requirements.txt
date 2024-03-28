@@ -2,6 +2,6 @@ flask
 flask-sqlalchemy
 flask-socketio
 requests
-pcryptodome
+pycryptodome
 jwt
 Werkzeug
