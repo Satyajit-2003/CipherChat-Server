@@ -6,9 +6,8 @@ def create_message(sender, receiver, message, timestamp):
     db.session.add(msg)
     db.session.commit()
 
-def get_messages(username):
-    # TODO: Uncomment the code to delete msg from db when testing is done. 
+def get_messages(username): 
     messages = Message.query.filter_by(receiver=username).all()
-    # for message in messages:
-    #     db.session.delete(message)
+    for message in messages:
+        db.session.delete(message)
     return messages
