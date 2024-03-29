@@ -10,4 +10,5 @@ def get_messages(username):
     messages = Message.query.filter_by(receiver=username).all()
     for message in messages:
         db.session.delete(message)
+        db.session.commit()
     return messages
