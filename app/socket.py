@@ -40,7 +40,7 @@ def handle_message(data):
         return
     send_to = data['to']
     message = data['message']
-    if send_to in active_users or auth.active_users[send_to] == False:
+    if send_to in active_users and auth.active_users[send_to] == True:
         print("Emited", message, user.username, send_to, int(time.time()))
         socketio.emit('message', {'message': message, 'from' : user.username, 'timestamp':int(time.time())}, room=active_users[send_to])
     else:
