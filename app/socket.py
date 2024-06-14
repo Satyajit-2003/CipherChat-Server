@@ -3,7 +3,7 @@ from flask import request
 from app import app, db, socketio
 from app.utils import auth, buffer
 
-active_users = {}
+active_users = {}  # username : session_id
 
 @socketio.on('connect')
 def handle_connect(data):

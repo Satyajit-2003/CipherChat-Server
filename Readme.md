@@ -56,4 +56,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Client
 
-The client for this server can be found at [this link](Https://github.com/TannuCk/CipherChat-Client).
+The client for this server can be found at [this link](Https://github.com/Satyajit-2003/CipherChat-Client).
